@@ -1,5 +1,3 @@
-import com.sun.corba.se.impl.oa.poa.ActiveObjectMap.Key;
-
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
