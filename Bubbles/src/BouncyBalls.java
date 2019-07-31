@@ -181,7 +181,7 @@ public class BouncyBalls extends Application {
 			double c1 = (0 + (Math.random() * 1));
 			double c2 = (0 + (Math.random() * 1));
 			double c3 = (0 + (Math.random() * 1));
-			double c4 = (0.4 + (Math.random() * 0.5));
+			double c4 = (0.4 + (Math.random() * 0.4));
 			Color color = new Color(c1,c2,c3,c4);
 			
 			ball = new Circle(posX, posY, radius, color);
