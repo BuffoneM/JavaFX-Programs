@@ -16,7 +16,7 @@ import javafx.util.Duration;
 
 public class BouncyBalls extends Application {
 	
-	private Ball[] balls = new Ball[200];
+	private Ball[] balls = new Ball[50000];
 	private int numBalls = 50;
 	private boolean paused = true;
 	private DrawingPane dPane = new DrawingPane();
@@ -132,7 +132,7 @@ public class BouncyBalls extends Application {
 		//STEP E - Part 1: create a method called addBalls that will increase 
 		// the numBalls value by 10 to a maximum of 200.
 		public void addBalls() {
-			if(numBalls < 200) {
+			if(numBalls < balls.length) {
 				
 				for(int i = numBalls; i < (numBalls + 10); i++) {
 					Ball newBall = new Ball();
@@ -181,8 +181,8 @@ public class BouncyBalls extends Application {
 			double c1 = (0 + (Math.random() * 1));
 			double c2 = (0 + (Math.random() * 1));
 			double c3 = (0 + (Math.random() * 1));
-			double c4 = (0.4 + (Math.random() * 0.4));
-			Color color = new Color(c1,c2,c3,c4);
+			//double c4 = (0.4 + (Math.random() * 0.4));
+			Color color = new Color(c1,c2,c3,1);
 			
 			ball = new Circle(posX, posY, radius, color);
 			
